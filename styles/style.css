@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.snowfall {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vw;
+  pointer-events: none;
+}
+
+.snowfall__flake {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -40px;
+  background: no-repeat center / contain;
+  animation: snow 7s infinite ease-in;
+}
+
+@keyframes snow {
+  100% {
+      top: 500px;
+      transform: translate(100px) rotate(360deg);
+      opacity: 0;
+  }
+}
